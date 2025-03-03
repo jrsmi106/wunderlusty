@@ -44,3 +44,59 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+@font-face {
+    font-family: 'Molle';
+    src: url(https://fonts.google.com/share?selection.family=Molle:ital@1%7CMontserrat );
+}
+
+@font-face {
+    font-family: 'Montserrat' ;
+    src: url(https://fonts.google.com/share?selection.family=Molle:ital@1%7CMontserrat );
+}
+
+:root{
+    --body-fonts: 'Montserrat', sans-serif;
+    --header-fonts: 'Molle'
+    --yellow:#F6D64A;
+    --teal: #55BCD5;
+    --purple: #9B26B0 ;
+    --blue: #499BD2;
+    --dark-gray: #222222 ;
+    --light-gray:#EAEAEA ; 
+    --white: #FFFFFF;
+    --black: #000000;
+
+}
+
+#skip{
+    position: absolute;
+    left: -1000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+body{
+    background-color: var(--white);
+    font-family: var(--body-fonts);
+    color: var(--black);
+}
+
+header{
+    background-image: linear-gradient( var(--teal), var(--light-gray));
+
+}
+
+
+h1{
+    font-family: var(--header-fonts);
+    color: var(--black);
+    font-size: large ;
+}
+nav li{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+nav a{
+    text-decoration: none;
+}
