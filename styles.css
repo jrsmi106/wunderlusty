@@ -334,6 +334,7 @@ h3 {
 #testimonials q{
     font-style: italic;
     padding: 10px;
+    width: 200px;
     
 
 }
@@ -350,9 +351,9 @@ h3 {
 }
 
 #about div{
-    display: flex;
-    flex-wrap: wrap;
-    width: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 100px;
     margin: auto;
     padding-top: 10px;
 }
@@ -370,9 +371,10 @@ h3 {
 }
 
 #about div img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     padding: 10px;
+    margin: 10px;
     
 
 }
@@ -384,12 +386,15 @@ h3 {
 #contact{
     display: flex;
    flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
 
 }
 
 #contact h3{
     width: 100%;
     font-weight: bold;
+
 
 }
 
@@ -401,13 +406,61 @@ h3 {
 
 }
 
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #contact input{
+    border: var(--purple) solid 2px;
+    padding: 10px;
+
+}
+#names{
+    display: flex;
+    flex-direction: column;
+}
+
+#names label{
+    padding-bottom: 10px;
+}
+
+
+#nums {
+    display: flex;
+    flex-direction: column;
+}
+
+#nums fieldset label {
+    display: flex;
+    padding-bottom: 10px;
+}
+#nums legend {
+    padding-bottom: 10px;
+}
+
+#selects option {
+    border: var(--purple) solid 2px;
+    padding: 10px;
+
+
+}
+
+#custom-select select{
     border: var(--purple) solid 2px;
 
 }
-#contact input[type=number]{
-    border: var(--purple) solid 2px;
 
+#mySubmit {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--purple);
+    color: var(--white);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -441,14 +494,15 @@ footer a {
 /* medium screen*/
 
 @media screen and (min-width: 768x){
-
-
+ 
+    
 }
 
 /* large screen*/
 
 
 @media screen and (min-width: 1024){
+    
 
 
 }
