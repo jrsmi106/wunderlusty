@@ -484,25 +484,4 @@ footer a {
     color: var(--black);
     text-decoration: none;
 }
-/* small screen*/
 
-@media screen and (min-width: 480px){
-
-
-}
-    
-/* medium screen*/
-
-@media screen and (min-width: 768x){
- 
-    
-}
-
-/* large screen*/
-
-
-@media screen and (min-width: 1024){
-    
-
-
-}
